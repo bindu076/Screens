@@ -1,0 +1,12 @@
+.mainBody{
+	background-color:#333
+}
+.tableColor{
+	background-color:#1B191B;
+	color:white;
+	margin-top:40px;
+	
+}
+.table.table-bordered tr td{
+	border: 4px solid #333;
+}

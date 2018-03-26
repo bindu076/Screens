@@ -1,0 +1,17 @@
+.mainBody{
+	background-color:#333
+}
+.nav-pills>li{
+    margin-left: 0px !important;
+    margin-bottom: 30px;
+	margin-top:30px;
+}
+.nav-pills>li>a,.nav-pills>li.color{
+    background-color: black !important;
+    height:90px;
+	border: 2px solid #e65406;
+	border-radius:10px;
+	color:#e65406;
+	padding: 0;
+}
+
