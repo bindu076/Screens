@@ -12,60 +12,169 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 </head>
-<body class =  "mainBody">
-<div class="container about-school text-center">
-  <div class="row">
-    <div class="container">	
-      <ul  class="nav nav-pills">
-        <li class="col-lg-4">
-          <a  href="#" ><i class="fa fa-book"></i>Tap 1</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-bus"></i>Tap 2</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<body >
+	<div class="row">
+		<div class="container">
+			<ul id = "id1" class = "nav nav-pills"></ul>
+		</div>
+	</div>
+<!-- <div class="container about-school text-center"> -->
+  <!-- <div class="row"> -->
+    <!-- <div class="container">	 -->
+      <!-- <ul  class="nav nav-pills"> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a  href="#" ><i class="fa fa-book"></i>Tap 1</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-bus"></i>Tap 2</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a> -->
+        <!-- </li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
+  <!-- </div> -->
   
-    <div class="row">
-    <div class="container">	
-      <ul  class="nav nav-pills">
-        <li class="col-lg-4">
-          <a  href="#"><i class="fa fa-book"></i>Tap 1</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-bus"></i>Tap 2</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <!-- <div class="row"> -->
+    <!-- <div class="container">	 -->
+      <!-- <ul  class="nav nav-pills"> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a  href="#"><i class="fa fa-book"></i>Tap 1</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-bus"></i>Tap 2</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a> -->
+        <!-- </li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
+  <!-- </div> -->
   
-    <div class="row">
-    <div class="container">	
-      <ul  class="nav nav-pills">
-        <li class="col-lg-4">
-          <a  href="#"><i class="fa fa-book"></i>Tap 1</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-bus"></i>Tap 2</a>
-        </li>
-        <li class="col-lg-4">
-          <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <!-- <div class="row"> -->
+    <!-- <div class="container">	 -->
+      <!-- <ul  class="nav nav-pills"> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a  href="#"><i class="fa fa-book"></i>Tap 1</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-bus"></i>Tap 2</a> -->
+        <!-- </li> -->
+        <!-- <li class="col-lg-4"> -->
+          <!-- <a href="#"><i class="fa fa-futbol-o"></i>Tap 3</a> -->
+        <!-- </li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
+  <!-- </div> -->
 </div>
 
-	
-	
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<script>
+$(document).ready(function(){
+let obj = [
+{
+	userId:"us001",
+	password:"723827",
+	firstName:"john",
+	orgs:[{
+		orgId:"1",
+		orgName:'ABC',
+		serviceCount:'1',
+		status:[{
+			key:"DEV",
+			value:"30"
+		}]
+	}]
+},
+{
+	userId:"us002",
+	password:"2347",
+	firstName:"jack",
+	orgs:[
+	{
+		orgId:"2",
+		orgName:'DEF',
+		serviceCount:'1',
+		status:[{
+			key:"DEV",
+			value:"30"
+		}
+		]
+	}]
+},
+{
+	userId:"us002",
+	password:"2347",
+	firstName:"jack",
+	orgs:[
+	{
+		orgId:"2",
+		orgName:'DEF',
+		serviceCount:'1',
+		status:[{
+			key:"DEV",
+			value:"30"
+		}
+		]
+	}]
+},
+{
+	userId:"us002",
+	password:"2347",
+	firstName:"jack",
+	orgs:[
+	{
+		orgId:"2",
+		orgName:'DEF',
+		serviceCount:'1',
+		status:[{
+			key:"DEV",
+			value:"30"
+		}
+		]
+	}]
+},
+{
+	userId:"us002",
+	password:"2347",
+	firstName:"jack",
+	orgs:[
+	{
+		orgId:"2",
+		orgName:'DEF',
+		serviceCount:'1',
+		status:[{
+			key:"DEV",
+			value:"30"
+		}
+		]
+	}]
+}
 
+];
+
+for(var i= 0;i<obj.length;i++){
+	var key = Object.keys(obj[i]);
+	var value = Object.values(obj[i]);
+	console.log(value);
+	var parent = $("<li class ='col-lg-4'></li>")
+	for(var j= 0;j<key.length;j++){
+		<!-- if(key[j] == "orgs"){ -->
+		<!-- key = Object.keys(value[j]);	 -->
+		<!-- console.log(key); -->
+		<!-- value = Object.values(value[j]); -->
+		<!-- } -->
+		parent.append(`${key[j]} : ${value[j]} <br>`);
+	}
+	
+	$("#id1").append(parent);
+}
+});
+
+</script>
+
+
+
+	
 </body>
 </html>
